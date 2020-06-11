@@ -26,7 +26,8 @@ def TomcatScan(url):
     try:
         for defclass in dlist:
             print(Vcolors.OKGREEN + "[?] 正在执行" + defclass + "脚本检测.......\r" + Vcolors.ENDC)
-            defclass += "({})".format(url)
+            exec("from exphub.tomcat.{0} import {1}".format(defclass, defclass))
+            defclass += "(url)"
             exec(defclass)
     except:
         logging.error("TomcatScan脚本出现异常")
