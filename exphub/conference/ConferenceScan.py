@@ -26,7 +26,8 @@ def ConferenceScan(url):
     try:
         for defclass in dlist:
             print(Vcolors.OKGREEN + "[?] 正在执行" + defclass + "脚本检测.......\r" + Vcolors.ENDC)
-            defclass += "({})".format(url)
+            exec("from exphub.conference.{0} import {1}".format(defclass, defclass))
+            defclass += "(url)"
             exec(defclass)
     except:
         logging.error("ConferenceScan脚本出现异常")
