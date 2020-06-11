@@ -1,6 +1,6 @@
 # encoding: utf-8
 '''
-@Version:   V1.0
+@Version:   V1.0 
 @Author:    JE2Se
 @Contact:   admin@je2se.com
 @Website:   https://www.je2se.com
