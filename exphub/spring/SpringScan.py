@@ -26,7 +26,8 @@ def SpringScan(url):
     try:
         for defclass in dlist:
             print(Vcolors.OKGREEN + "[?] 正在执行" + defclass + "脚本检测.......\r" + Vcolors.ENDC)
-            defclass += "({})".format(url)
+            exec("from exphub.spring.{0} import {1}".format(defclass, defclass))
+            defclass += "(url)"
             exec(defclass)
     except:
         logging.error("SpringScan脚本出现异常")
