@@ -40,6 +40,6 @@ def Conference_CVE_2019_3396(Url):
         code = resp.status_code
         code2 = resp2.status_code
         if (code == 200 and con.lower().find('bin') != -1 and con.lower().find('root') != -1) or (code2 == 200 and con2.lower().find('uid=') != -1 and con2.lower().find('gid=') != -1):
-            print(Vcolors.RED +"[!] 存在Conference路径穿越与命令执行漏洞\r:->CVE_2019_3396\r" + Vcolors.ENDC)
+            print(Vcolors.RED +"[!] 存在Conference路径穿越与命令执行漏洞:->CVE_2019_3396\r" + Vcolors.ENDC)
     except:
         logging.error("Conference_CVE_2019_3396脚本出现异常")
