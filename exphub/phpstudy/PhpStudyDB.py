@@ -12,17 +12,11 @@
 
 from lib import *
 import logging
-from lib.Urldeal import urldeal
+from lib.Urldeal import umethod
 import requests
 
 def PhpStudyDB(Url): #必须与脚本名称相同
-    scheme, url, port = urldeal(Url)
-    if port is None and scheme == 'https':
-        port = 443
-    elif port is None and scheme == 'http':
-        port = 80
-    else:
-        port = port
+    scheme, url, port = umethod(Url)
     urldata = scheme + "://" + url + ':' + str(port) + '/phpmyadmin/index.php'
     post_data = {
         "pma_username": "root",
