@@ -16,5 +16,14 @@ def urldeal(url):
         res = urllib.parse.urlparse(url)
     else:
         res = urllib.parse.urlparse('http://%s' % url)
-    print(res.scheme, res.hostname, res.port)
     return res.scheme, res.hostname, res.port
+
+def umethod(Url):
+    scheme, url, port = urldeal(Url)
+    if port is None and scheme == 'https':
+        port = 443
+    elif port is None and scheme == 'http':
+        port = 80
+    else:
+        port = port
+    return scheme, url, port
