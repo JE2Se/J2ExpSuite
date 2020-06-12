@@ -55,15 +55,23 @@ if __name__ == '__main__':
             StrutsScan(url)
         if args.weblogic:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED +"Weblogic漏洞检测" + Vcolors.ENDC)
+            WeblogicScan(url)
         if args.thinkphp:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED +"ThinkPHP漏洞检测" + Vcolors.ENDC)
+            ThinkphpScan(url)
         if args.shiro:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED +"Apache Shiro漏洞检测" + Vcolors.ENDC)
+            ShiroScan(url)
         if args.tomcat:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED +"Tomcat漏洞检测" + Vcolors.ENDC)
+            TomcatScan(url)
         if args.spring:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED +"Spring漏洞检测" + Vcolors.ENDC)
+            SpringScan(url)
         if args.conference:
             print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED + "Conference漏洞检测" + Vcolors.ENDC)
+            ConferenceScan(url)
         if args.phpstudy:
-            print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED + "PhpStudy后门漏洞检测" + Vcolors.ENDC)
+            print(Vcolors.CYAN + "[+] 测试的模块内容为：" + Vcolors.ENDC + Vcolors.RED + "PhpStudy漏洞检测" + Vcolors.ENDC)
+            PhpstudyScan(url)
+        print(Vcolors.CYAN + "[.]-----------扫描结束，感谢使用----------" + Vcolors.ENDC)
