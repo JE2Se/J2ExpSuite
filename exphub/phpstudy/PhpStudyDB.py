@@ -31,21 +31,7 @@ def PhpStudyDB(Url): #必须与脚本名称相同
             "server": "1",
             "target": "index.php"
         }
-        s = requests.session()
-        resp = s.post(payload_url, data=post_data, headers=headers, timeout=5, verify=False)
-        resp2 = s.get(payload_url, headers=headers, timeout=5, verify=False)
-        con = resp.text
-        con2 = resp2.text
-        if con2.lower().find('navigation.php') != -1 and con.lower().find('frame_navigation') != -1:
-            print(Vcolors.RED +"[!] 存在PhpStudy默认数据库界面口令漏洞\r默认口令root/root\r" + Vcolors.ENDC)
-        payload_url = scheme + "://" + url + ':' + str(port) + "/phpmyadmin/index.php"
-        headers = {
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept': '*/*',
-            "Content-Type": "application/x-www-form-urlencoded",
-            'User-Agent': "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:49.0) Gecko/20100101 Firefox/49.0",
-        }
-        post_data = {
+        post_data1 = {
             "pma_username": "root",
             "pma_password": "",
             "server": "1",
@@ -57,6 +43,13 @@ def PhpStudyDB(Url): #必须与脚本名称相同
         con = resp.text
         con2 = resp2.text
         if con2.lower().find('navigation.php') != -1 and con.lower().find('frame_navigation') != -1:
-            print(Vcolors.RED + "[!] 存在PhpStudy默认数据库界面口令漏洞\r默认口令root/空密码\r" + Vcolors.ENDC)
+            print(Vcolors.RED +"[!] 存在PhpStudy默认数据库界面口令漏洞，默认口令root/root\r" + Vcolors.ENDC)
+        else:
+            resp = s.post(payload_url, data=post_data1, headers=headers, timeout=5, verify=False)
+            resp2 = s.get(payload_url, headers=headers, timeout=5, verify=False)
+            con = resp.text
+            con2 = resp2.text
+            if con2.lower().find('navigation.php') != -1 and con.lower().find('frame_navigation') != -1:
+                print(Vcolors.RED + "[!] 存在PhpStudy默认数据库界面口令漏洞，默认口令root/空\r" + Vcolors.ENDC)
     except:
         logging.error("PhpStudyDB脚本出现异常")
