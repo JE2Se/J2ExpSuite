@@ -73,7 +73,7 @@ def XXX_POC(Url): #必须与脚本名称相同
       urldata = scheme + "://" + url + ':' + str(port) + '/login.action'
       if "漏洞判断成功条件":
     #------------POC部分，按需更改--------------
-          print(Vcolors.RED +"[!] 存在【漏洞名称】漏洞\r版本号:什么漏洞\r" + Vcolors.ENDC)
+          print(Vcolors.RED +"[!] 存在【漏洞名称】漏洞->版本号:什么漏洞\r" + Vcolors.ENDC)
     except:
         logging.error("【脚本名称】脚本出现异常")
         
