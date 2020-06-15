@@ -35,6 +35,20 @@ Phpstudy | Phpstudy后门漏洞 | 2020年06月11日
   ~|Spring_CVE_2020_5405|2020年06月12日
   ~|Spring_CVE_2019_3799|2020年06月12日
   ~|Spring_CVE_2018_1273|2020年06月12日
+  ThinkPhp|ThinkPHP_SQLi_XFF_POC|2020年06月15日
+  ~|ThinkPHP_Input_RCE_POC|2020年06月15日
+  ~|ThinkPHP_PAY_SQLI_POC|2020年06月15日
+  ~|ThinkPHP_Multi_SQL_LEAK_POC|2020年06月15日
+  ~|ThinkPHP_Method_Filter_Code_Exec|2020年06月15日
+  ~|ThinkPHP_Lite_Code_Exec_POC|2020年06月15日
+  ~|ThinkPHP_Index_Showid_RCE_POC|2020年06月15日
+  ~|ThinkPHP_Invoke_Func_Code_Exec|2020年06月15日
+  ~|ThinkPHP_Index_Contruct_RCE|2020年06月15日
+  ~|ThinkPHP_Driver_Display_RCE|2020年06月15日
+  ~|ThinkPHP_Debug_Index_IDS_Sqli|2020年06月15日
+  ~|ThinkPHP_Construct_Debug_RCE|2020年06月15日
+  ~|ThinkPHP_Construct_Code_Exec_Verify|2020年06月15日
+  ~|ThinkPHP_Checkcode_Time_Sqli|2020年06月15日
 
 
     
