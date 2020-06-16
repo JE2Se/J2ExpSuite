@@ -29,32 +29,8 @@
 -|-|-
 Phpstudy | Phpstudy后门漏洞 | 2020年06月11日 
   ~|默认口令/空口令 | 2020年06月12日 
- Conference| CVE_2019_3396 | 2020年06月12日 
- Spring |Spring_CNVD_2016_04742|2020年06月12日 
-  ~|Spring_CNVD_2016_04742|2020年06月12日
-  ~|Spring_CVE_2020_5405|2020年06月12日
-  ~|Spring_CVE_2019_3799|2020年06月12日
-  ~|Spring_CVE_2018_1273|2020年06月12日
-  ThinkPhp|ThinkPHP_SQLi_XFF_POC|2020年06月15日
-  ~|ThinkPHP_Input_RCE_POC|2020年06月15日
-  ~|ThinkPHP_PAY_SQLI_POC|2020年06月15日
-  ~|ThinkPHP_Multi_SQL_LEAK_POC|2020年06月15日
-  ~|ThinkPHP_Method_Filter_Code_Exec|2020年06月15日
-  ~|ThinkPHP_Lite_Code_Exec_POC|2020年06月15日
-  ~|ThinkPHP_Index_Showid_RCE_POC|2020年06月15日
-  ~|ThinkPHP_Invoke_Func_Code_Exec|2020年06月15日
-  ~|ThinkPHP_Index_Contruct_RCE|2020年06月15日
-  ~|ThinkPHP_Driver_Display_RCE|2020年06月15日
-  ~|ThinkPHP_Debug_Index_IDS_Sqli|2020年06月15日
-  ~|ThinkPHP_Construct_Debug_RCE|2020年06月15日
-  ~|ThinkPHP_Construct_Code_Exec_Verify|2020年06月15日
-  ~|ThinkPHP_Checkcode_Time_Sqli|2020年06月15日
-  别着急|正在写|持续更新
-  要不然|大家|一起来~
-
-
-    
-    
+  先这样|POC写完了再|一起放上来~
+之前写的就先删除了，每天更新一个两个的也没意思
 
 
 ## 看一下POC的编写
@@ -94,4 +70,9 @@ def XXX_POC(Url): #必须与脚本名称相同
 我还想白嫖几个star，说不定哪天我更新POC呢~
 
 ## 项目愿景
+二期：
+
 后期会加入到指纹识别
+
+     会加入差不多的POC
+
