@@ -107,12 +107,16 @@ def OAScan(url):  #函数名与文件名相同，建议为大写字母加上Scan
         logging.error("OAScan脚本出现异常")  #修改异常监控名称
 ```
 
-#### ```__init__.py```
+#### ```__init__.py```OA路径
 
 ```python
 from exphub.oa.OAScan import OAScan  #导入文件名称，导入函数名称
 ```
+#### ```__init__.py```exphub路径
 
+```python
+from exphub.oa import *  #导入函数名称
+```
 
 ## 注意
 
